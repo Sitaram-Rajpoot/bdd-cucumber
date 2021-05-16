@@ -1,0 +1,102 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-15T15:46:51.517Z",
+        "line": 4,
+        "name": "Login to Custom Automation Practice Application with Valid Credential",
+        "description": "",
+        "id": "login-to-salesforce-lightning-custom-automation-practice-application;login-to-custom-automation-practice-application-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Browser and Enter Custom Automation Practice Application Url",
+            "match": {
+              "location": "stepdefinitions.LoginTest.open_browser_and_enter_custom_automation_practice_application_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the \"userName\" and \"passWord\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userName\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"passWord\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.LoginTest.enter_the_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Sign in button",
+            "match": {
+              "location": "stepdefinitions.LoginTest.click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify Title Once User Logged in Successfully on the application",
+            "match": {
+              "location": "stepdefinitions.LoginTest.verify_title_once_user_logged_in_successfully_on_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-15T15:46:51.717Z",
+        "line": 26,
+        "name": "",
+        "description": "",
+        "id": "login-to-salesforce-lightning-custom-automation-practice-application;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login to Salesforce Lightning Custom Automation Practice Application",
+    "description": "",
+    "id": "login-to-salesforce-lightning-custom-automation-practice-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/appfeatures/Login.feature",
+    "tags": []
+  }
+]

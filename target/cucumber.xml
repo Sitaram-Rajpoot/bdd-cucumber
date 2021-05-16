@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.426">
+<testcase classname="Login to Salesforce Lightning Custom Automation Practice Application" name="Login to Custom Automation Practice Application with Valid Credential" time="0.154">
+<system-out><![CDATA[Given Open Browser and Enter Custom Automation Practice Application Url.....passed
+When Enter the "userName" and "passWord"....................................passed
+And Click on Sign in button.................................................passed
+Then Verify Title Once User Logged in Successfully on the application.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to Salesforce Lightning Custom Automation Practice Application" name=""/>
+</testsuite>

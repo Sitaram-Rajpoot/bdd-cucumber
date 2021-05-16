@@ -1,0 +1,3 @@
+stepdefinitions\LoginTest.class
+stepdefinitions\UserRegistration.class
+testrunner\SalesForceApplication_Test.class
