@@ -1,27 +1,19 @@
-Feature: Login to Salesforce Lightning Custom Automation Practice Application
+Feature: Login Feature
+@Regression
+Scenario: Login page Title
+Given User is on Login page
+When  Get the Login page Title
+Then Verify Title should be "Login - My Store" 
+@Smoke
+Scenario: Verify Forget Password Link
+Given User is on Login page 
+When Verify Forget password link is visible
 
-  @Smoke
-  Scenario: Login to Custom Automation Practice Application with Valid Credential
-    Given Open Browser and Enter Custom Automation Practice Application Url
-    When Enter the "userName" and "passWord"
-    And Click on Sign in button
-    Then Verify Title Once User Logged in Successfully on the application
-
-  @Regression
-  Scenario: Login to Custom Automation Practice Application with Valid Credential
-    Given Open Browser and Enter Custom Automation Practice Application Url
-    When Enter the "userName" and "passWord"
-    And Click on Sign in button
-    Then Verify Title Once User Logged in Successfully on the application
-
-    
-    @Smoke
-    Scenario Outline: 
-    Given user enter application 
-    And enter user name and password 
-    Then Verify User Login message for valid and in valid credential
-    
-    Examples: 
-    |username|password|
-    |username1|password1|
-    |username2|password2|
+@Smoke
+Scenario: Login with Correct Credentials
+Given User is on Login page
+When  User enter usernName "sitaram.rajpootsr@gmail.com" 
+And User enter Password "Automation$1234"
+And User Click on Sign in button 
+Then Verify Account page Title 
+And Account page Title should be "My account - My Store"

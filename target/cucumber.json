@@ -1,71 +1,91 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-05-15T15:46:51.517Z",
         "line": 4,
-        "name": "Login to Custom Automation Practice Application with Valid Credential",
+        "name": "",
         "description": "",
-        "id": "login-to-salesforce-lightning-custom-automation-practice-application;login-to-custom-automation-practice-application-with-valid-credential",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.AccountPageSteps.user_already_logged_in_to_the_application_successfully(AccountPageSteps.java:26)\r\n\tat ✽.User already logged in to the application successfully(file:///D:/Learning/TestAutomation/bdd-cucumber/src/test/resources/appfeatures/Account.feature:5)\r\n",
+              "duration": 22000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User already logged in to the application successfully",
+            "match": {
+              "location": "stepdefinitions.AccountPageSteps.user_already_logged_in_to_the_application_successfully(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "passWord"
+                ]
+              },
+              {
+                "cells": [
+                  "sitaram.rajpootsr@gmail.com",
+                  "Automation$1234"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-17T06:08:53.972Z",
+        "line": 10,
+        "name": "Account page Title",
+        "description": "",
+        "id": "account-page;account-page-title",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "Open Browser and Enter Custom Automation Practice Application Url",
+            "line": 11,
+            "name": "User is on Account page",
             "match": {
-              "location": "stepdefinitions.LoginTest.open_browser_and_enter_custom_automation_practice_application_url()"
+              "location": "stepdefinitions.AccountPageSteps.user_is_on_account_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "Enter the \"userName\" and \"passWord\"",
+            "line": 12,
+            "name": "Get the Account page Title",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"userName\"",
-                  "offset": 10
-                },
-                {
-                  "val": "\"passWord\"",
-                  "offset": 25
-                }
-              ],
-              "location": "stepdefinitions.LoginTest.enter_the_and(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.AccountPageSteps.get_the_account_page_title()"
             },
             "keyword": "When "
           },
           {
             "result": {
               "duration": 1000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "Click on Sign in button",
+            "line": 13,
+            "name": "Verify Account page Title should be \"My account - My Store\"",
             "match": {
-              "location": "stepdefinitions.LoginTest.click_on_sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify Title Once User Logged in Successfully on the application",
-            "match": {
-              "location": "stepdefinitions.LoginTest.verify_title_once_user_logged_in_successfully_on_the_application()"
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.AccountPageSteps.verify_account_page_title_should_be(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -75,16 +95,166 @@
             "name": "@Smoke"
           }
         ]
+      }
+    ],
+    "name": "Account page",
+    "description": "",
+    "id": "account-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/appfeatures/Account.feature",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-17T06:08:54.170Z",
+        "line": 8,
+        "name": "Verify Forget Password Link",
+        "description": "",
+        "id": "login-feature;verify-forget-password-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:23)\r\n\tat ✽.User is on Login page(file:///D:/Learning/TestAutomation/bdd-cucumber/src/test/resources/appfeatures/Login.feature:9)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "User is on Login page",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Verify Forget password link is visible",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.verify_forget_password_link_is_visible()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
       },
       {
-        "start_timestamp": "2021-05-15T15:46:51.717Z",
-        "line": 26,
-        "name": "",
+        "start_timestamp": "2021-05-17T06:08:54.208Z",
+        "line": 13,
+        "name": "Login with Correct Credentials",
         "description": "",
-        "id": "login-to-salesforce-lightning-custom-automation-practice-application;;;2",
+        "id": "login-feature;login-with-correct-credentials",
         "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [],
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:23)\r\n\tat ✽.User is on Login page(file:///D:/Learning/TestAutomation/bdd-cucumber/src/test/resources/appfeatures/Login.feature:14)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "User is on Login page",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User enter usernName \"sitaram.rajpootsr@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sitaram.rajpootsr@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.LoginPageSteps.user_enter_usern_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enter Password \"Automation$1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Automation$1234\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.LoginPageSteps.user_enter_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User Click on Sign in button",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.user_click_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Verify Account page Title",
+            "match": {
+              "location": "stepdefinitions.LoginPageSteps.verify_Account_page_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Account page Title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.LoginPageSteps.account_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
         "tags": [
           {
             "name": "@Smoke"
@@ -92,9 +262,9 @@
         ]
       }
     ],
-    "name": "Login to Salesforce Lightning Custom Automation Practice Application",
+    "name": "Login Feature",
     "description": "",
-    "id": "login-to-salesforce-lightning-custom-automation-practice-application",
+    "id": "login-feature",
     "keyword": "Feature",
     "uri": "file:src/test/resources/appfeatures/Login.feature",
     "tags": []

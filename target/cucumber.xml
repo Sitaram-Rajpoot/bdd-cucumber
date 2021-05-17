@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.426">
-<testcase classname="Login to Salesforce Lightning Custom Automation Practice Application" name="Login to Custom Automation Practice Application with Valid Credential" time="0.154">
-<system-out><![CDATA[Given Open Browser and Enter Custom Automation Practice Application Url.....passed
-When Enter the "userName" and "passWord"....................................passed
-And Click on Sign in button.................................................passed
-Then Verify Title Once User Logged in Successfully on the application.......passed
-]]></system-out>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.471">
+<testcase classname="Account page" name="Account page Title" time="0.175">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[When User already logged in to the application successfully.................failed
+Given User is on Account page...............................................skipped
+When Get the Account page Title.............................................skipped
+Then Verify Account page Title should be "My account - My Store"............skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepdefinitions.AccountPageSteps.user_already_logged_in_to_the_application_successfully(AccountPageSteps.java:26)
+	at ✽.User already logged in to the application successfully(file:///D:/Learning/TestAutomation/bdd-cucumber/src/test/resources/appfeatures/Account.feature:5)
+]]></failure>
 </testcase>
-<testcase classname="Login to Salesforce Lightning Custom Automation Practice Application" name=""/>
+<testcase classname="Login Feature" name="Verify Forget Password Link" time="0.016">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on Login page.................................................failed
+When Verify Forget password link is visible.................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepdefinitions.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:23)
+	at ✽.User is on Login page(file:///D:/Learning/TestAutomation/bdd-cucumber/src/test/resources/appfeatures/Login.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Login Feature" name="Login with Correct Credentials" time="0.017">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is on Login page.................................................failed
+When User enter usernName "sitaram.rajpootsr@gmail.com".....................skipped
+And User enter Password "Automation$1234"...................................skipped
+And User Click on Sign in button............................................skipped
+Then Verify Account page Title..............................................skipped
+And Account page Title should be "My account - My Store"....................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepdefinitions.LoginPageSteps.user_is_on_login_page(LoginPageSteps.java:23)
+	at ✽.User is on Login page(file:///D:/Learning/TestAutomation/bdd-cucumber/src/test/resources/appfeatures/Login.feature:14)
+]]></failure>
+</testcase>
 </testsuite>

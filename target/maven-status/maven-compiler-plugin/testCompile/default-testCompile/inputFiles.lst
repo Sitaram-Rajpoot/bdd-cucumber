@@ -1,3 +1,4 @@
-C:\Users\sitar\TestAutomation\Selenium\TestCucumberPOC\src\test\java\stepdefinitions\UserRegistration.java
-C:\Users\sitar\TestAutomation\Selenium\TestCucumberPOC\src\test\java\stepdefinitions\LoginTest.java
-C:\Users\sitar\TestAutomation\Selenium\TestCucumberPOC\src\test\java\testrunner\SalesForceApplication_Test.java
+D:\Learning\TestAutomation\bdd-cucumber\src\test\java\testrunner\MyTestRunner.java
+D:\Learning\TestAutomation\bdd-cucumber\src\test\java\stepdefinitions\AccountPageSteps.java
+D:\Learning\TestAutomation\bdd-cucumber\src\test\java\apphooks\AppHooks.java
+D:\Learning\TestAutomation\bdd-cucumber\src\test\java\stepdefinitions\LoginPageSteps.java
