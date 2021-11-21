@@ -23,7 +23,7 @@ public class ConfigReader {
 
 		try {
 			
-			System.out.println("D:\\Learning\\TestAutomation\\bdd-cucumber\\src\\test\\resources\\config\\config.properties");
+			
 			String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\config\\config.properties";
 			System.out.println(filePath);
 			FileInputStream fis = new FileInputStream(filePath);
